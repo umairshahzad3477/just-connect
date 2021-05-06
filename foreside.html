@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css" integrity="sha512-xmGTNt20S0t62wHLmQec2DauG9T+owP9e6VU8GigI0anN7OXLip9i7IwEhelasml2osdxX71XcYm6BQunTQeQg==" crossorigin="anonymous" />
+      <link rel="stylesheet" href="style.css">
+      <title>Just Connect</title>
+   </head>
+
+   <body>
+
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-lg-3 self-center">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="238" height="42" viewBox="0 0 238 42">
+                    <defs>
+                      <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 500 88">
+                        <image width="500" height="88" xlink:href="data:image/png;base64,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"/>
+                      </pattern>
+                    </defs>
+                    <rect id="logo" width="238" height="42" fill="url(#pattern)"/>
+                  </svg>
+                  
+            </div>
+            <div class="col-lg-9">
+                <ul class="nav float-right mr-5 pr-5">
+                    <li class="nav-item"><a href="" class="nav-link">Opret opgave</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Find håndværker</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Om JustConnect</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Tilmeld</a></li>
+                    <button class="btn btn-square bg-green">
+                        <svg id="user_1_" data-name="user (1)" xmlns="http://www.w3.org/2000/svg" width="27.05" height="25.923" viewBox="0 0 27.05 25.923">
+                            <path id="Path_3" data-name="Path 3" d="M328.172,260.508h-.282v-1.691a2.818,2.818,0,0,0-5.635,0v1.691h-.282A1.975,1.975,0,0,0,320,262.481v3.945a1.975,1.975,0,0,0,1.972,1.973h6.2a1.975,1.975,0,0,0,1.972-1.973v-3.945a1.975,1.975,0,0,0-1.972-1.973Zm-4.227-1.691a1.127,1.127,0,1,1,2.254,0v1.691h-2.254Zm0,0" transform="translate(-303.094 -242.475)" fill="#fff"/>
+                            <path id="Path_4" data-name="Path 4" d="M15.216,262.481A3.669,3.669,0,0,1,17.47,259.1v-.282a4.456,4.456,0,0,1,.441-1.91A5.327,5.327,0,0,0,14.934,256H5.354A5.36,5.36,0,0,0,0,261.354V265.3a.846.846,0,0,0,.845.845h14.37Zm0,0" transform="translate(0 -242.475)" fill="#fff"/>
+                            <path id="Path_5" data-name="Path 5" d="M96.6,5.635A5.635,5.635,0,1,1,90.967,0,5.635,5.635,0,0,1,96.6,5.635Zm0,0" transform="translate(-80.824)" fill="#fff"/>
+                        </svg>
+                      Login
+                    </button>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER SECTION END -->
+
+    <div class="container-fluid hero">
+        <div class="row justify-center">
+            <div class="col-7">
+                <div class="text-center mb-4">
+                    <img src="assets/logo.png" class="text-center" alt="">
+                </div>
+                <form action="">
+                    <div class="search-field">
+                        <div class="btn btn-circle bg-white">
+                            <img src="assets/magnifier.png" alt="">
+                        </div>
+                        <input type="text" placeholder="Hvad søger du?" name="" id="">                      
+                    </div>
+                </form>
+                <ul class="search-tags nav mt-4">
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Murer
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Murer
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Murer
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Murer
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Murer
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Murer
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Murer
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Murer
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Murer
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Murer
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Murer
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Flyttemand
+                    </li>
+                    <li class="tags">
+                        <img src="assets/delivery-box.png" alt="">
+                        Murer
+                    </li>
+                </ul>
+
+                <div class="text-center mt-3">
+                    <button class="btn btn-circle bg-green pl-4 pr-4 search-btn"><u>Opret opgave, og modtag tilbud</u></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION END -->
+
+    <div class="container info-section">
+        <div class="row mt-5 pt-5 pb-5">
+            <div class="col-lg-4 text-center pl-4 pr-4">
+                <img src="assets/Mask Group 17.png" alt="">
+                <h5 class="mt-4">Find en håndværker</h5>
+                <p class="mt-2 mb-0">
+                    Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim. Aliquam aliquam sodales orci. Suspendisse potenti. 
+                </p>
+            </div>
+
+            <div class="col-lg-4 text-center pl-4 pr-4">
+                <img src="assets/Mask Group 19.png" alt="">
+                <h5 class="mt-4">Opret en opgave, og modtag tilbud</h5>
+                <p class="mt-2 mb-0">
+                    Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim. Aliquam aliquam sodales orci. Suspendisse potenti. 
+                </p>
+            </div>
+
+            <div class="col-lg-4 text-center pl-4 pr-4">
+                <img src="assets/Mask Group 20.png" alt="">
+                <h5 class="mt-4">Om JustConnect</h5>
+                <p class="mt-2 mb-0">
+                    Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim. Aliquam aliquam sodales orci. Suspendisse potenti. 
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- INFO SECTION END -->
+
+    <div class="container bg-green pt-4 pb-4 pr-5 pl-5 box-shadow mb-5">
+        <div class="row">
+            <div class="col-lg-9">
+                <h5>Har du en opgave der skal løses?</h5>
+                <h4 class="mb-0"><b>Opret opgave nu - og modtag tilbud fra håndværkere </b></h4>
+            </div>
+            <div class="col-lg-3 self-center">
+                <button class="btn btn-circle bg-blue w-100 p-2 font-weight-bold">Opret opgave</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- GREEN BOX END -->
+
+    <div class="container-fluid pt-5 pb-5 bg-gray features-section">
+        <div class="container">
+            <div class="row">
+                <div class="feature-box upper">
+                    <img src="assets/Group 71.png" alt="">
+                    <p>Beskriv kort
+                        opgaven og
+                        indsend den.
+                        Nemt og enkelt.</p>
+                </div>
+    
+                <div class="feature-box bottom">
+                    <img src="assets/Group 71.png" alt="">
+                    <p>Beskriv kort
+                        opgaven og
+                        indsend den.
+                        Nemt og enkelt.</p>
+                </div>
+    
+                <div class="feature-box upper">
+                    <img src="assets/Group 71.png" alt="">
+                    <p>Beskriv kort
+                        opgaven og
+                        indsend den.
+                        Nemt og enkelt.</p>
+                </div>
+    
+                <div class="feature-box bottom">
+                    <img src="assets/Group 71.png" alt="">
+                    <p>Beskriv kort
+                        opgaven og
+                        indsend den.
+                        Nemt og enkelt.</p>
+                </div>
+    
+                <div class="feature-box upper">
+                    <img src="assets/Group 71.png" alt="">
+                    <p>Beskriv kort
+                        opgaven og
+                        indsend den.
+                        Nemt og enkelt.</p>
+                </div>
+    
+                <div class="feature-box bottom">
+                    <img src="assets/Group 71.png" alt="">
+                    <p>Beskriv kort
+                        opgaven og
+                        indsend den.
+                        Nemt og enkelt.</p>
+                </div>
+
+                <div class="feature-box upper">
+                    <img src="assets/Group 71.png" alt="">
+                    <p>Beskriv kort
+                        opgaven og
+                        indsend den.
+                        Nemt og enkelt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+   </body>
+
+</html>

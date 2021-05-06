@@ -1,0 +1,139 @@
+.header {
+    background-color: #103247;
+}
+
+.header .nav {
+    padding: 14px 0;
+}
+
+.nav .nav-link {
+    color: white;
+    float: left;
+}
+
+.bg-green {
+    background-color: #67B65F;
+    color: white;
+}
+
+
+.header button.bg-green {
+    border-radius: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: grid;
+    padding: 8px 25px;
+    text-align: -webkit-center;
+}
+
+
+.self-center {
+    align-self: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.hero {
+    background-image: url(assets/Mask\ Group\ 10.png);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #103247b3;
+    padding: 70px 20px;
+}
+
+.btn-circle {
+    border-radius: 50px;
+}
+
+.hero .search-field {
+    background-color: #ffffffb8;
+    border-radius: 25px;
+}
+
+.hero .search-field input {
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 9px 15px;
+    border: none;
+    width: 90%;
+    outline: none !important;
+}
+
+.hero .search-field input::placeholder {
+    color: black;
+    font-weight: 600;
+}
+
+.hero .search-tags li.tags {
+    background-color: #67B65F;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.hero .search-btn {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.info-section p {
+    font-size: 16px;
+    color: gray;
+}
+
+.info-section img {
+    border: 3px solid #103247;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px -2px gray;
+}
+
+
+.bg-blue {
+    background-color: #103247;
+    color: white;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 8px -2px gray;
+}
+
+.bg-gray {
+    background-color: #F0F0F0;
+}
+
+.features-section .container {
+    padding: 70px 0;
+    background-image: url(assets/Lag\ 1.png);
+    background-size: cover;
+}
+
+.features-section .feature-box {
+    width: calc(100% / 7);
+    margin-top: -55px;
+}
+
+.features-section .feature-box img {
+    margin-left: 45px;
+}
+
+.features-section .feature-box>p {
+    padding-left: 80px;
+    line-height: 18px;
+    font-size: 13px;
+    margin-top: -25px;
+}
+
+.features-section .feature-box.upper {
+    margin-top: -25px;
+}
+.features-section .feature-box.bottom {
+    margin-top: 96px;
+    margin-bottom: -97px;
+}
